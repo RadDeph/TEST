@@ -1,5 +1,5 @@
 class Polidrome {
-  public static void main(String[] args) {
+  public static void Polidrome() {
 
     String str = "123", reverseStr = "";
     

@@ -1,7 +1,7 @@
 import java.util.HashMap;
 
 public class Rent {
-  public static void main(String[] args) {
+  public static void Rent() {
 
     HashMap<String, String> auto = new HashMap<String, String>();
 

@@ -7,7 +7,7 @@ class Recursion{
             return 1;
     }
 
-    public static void main(String[] args) {
+    public static void Recursion() {
         int number = 4, result;
         result = factorial(number);
         System.out.println(number + " factorial = " + result);

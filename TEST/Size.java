@@ -1,7 +1,7 @@
 import java.util.HashMap;
 
 public class Size {
-    public static void main(String[] args) {
+    public static void Size() {
 
         HashMap<String, String> auto = new HashMap<String, String>();
 

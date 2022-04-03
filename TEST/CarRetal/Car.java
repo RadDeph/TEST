@@ -1,45 +1,27 @@
-package TEST.CarRetal;
+package CarRetal;
 
 import java.util.HashMap;
 
 public class Car {
-private String model;
-private int size;
 
-    public String getModel() {
-        return model;
-    }
-
-    public void setModel(String model) {
-        this.model = model;
-    }
-
-    public int getSize() {
-        return size;
-    }
-
-    public void setSize(int size) {
-        this.size = size;
-    }
-    public int getAverageSize(String model, int size) {
+    public int getAverageSize(HashMap<String, Integer> auto) {
         int averageSize = 0;
-
-        HashMap<String, Integer> auto = new HashMap<String, Integer>();
-
-        auto.put("Mercedes", 200);
-        auto.put("Mazda", 100);
-        auto.put("Mitsubishi", 100);
-        auto.put("BMW", 200);
-        auto.put("lada", 10);
-
-
         int result = 0;
 
         for (int d : auto.values()) {
             result += d;
         }
-        System.out.println("medium size " + result / auto.size());
         return averageSize = result/auto.size();
+    }
+    public HashMap<String, Integer> getRent(HashMap<String, Integer> auto) {
+        HashMap<String, Integer> auto2 = new HashMap<String, Integer>();
+        for (String i : auto.keySet()) {
+            if (auto.get(i) == 100) {
+                System.out.println("sort of price: " + i + " value: " + auto.get(i));
+                auto2.put(i,auto.get(i));
+            }
+        }
+        return auto2;
     }
 }
 
